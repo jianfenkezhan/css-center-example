@@ -1,0 +1,25 @@
+{
+  "name": "css-center-example",
+  "version": "1.0.0",
+  "description": "a example to center div or other tags with css.",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jianfenkezhan/css-center-example.git"
+  },
+  "keywords": [
+    "css",
+    "center",
+    "layout",
+    "example"
+  ],
+  "author": "goooooog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jianfenkezhan/css-center-example/issues"
+  },
+  "homepage": "https://github.com/jianfenkezhan/css-center-example#readme"
+}
