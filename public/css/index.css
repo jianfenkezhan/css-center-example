@@ -1,0 +1,14 @@
+.app_content{
+  display: block;
+  font-size: 13px;
+  margin-top: 1px;
+  line-height:140%;
+  min-height: 730px;
+  background: #f8f5f5;
+}
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}

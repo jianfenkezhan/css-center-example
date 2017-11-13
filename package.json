@@ -4,7 +4,9 @@
   "description": "a example to center div or other tags with css.",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "test": "npm run eslint",
+    "eslint": "eslint .",
+    "start": "nodemon --inspect"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,35 @@
   "bugs": {
     "url": "https://github.com/jianfenkezhan/css-center-example/issues"
   },
-  "homepage": "https://github.com/jianfenkezhan/css-center-example#readme"
+  "homepage": "https://github.com/jianfenkezhan/css-center-example#readme",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-body": "*",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "*",
+    "koa-router": "*",
+    "koa-static": "^3.0.0",
+    "koa-static-cache": "^5.1.1",
+    "koa-views": "^6.1.2",
+    "moment": "^2.19.2",
+    "nunjucks": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "del": "*",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-header": "^1.8.9",
+    "gulp-imagemin": "*",
+    "gulp-mini-css": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "nodemon": "^1.12.1"
+  }
 }

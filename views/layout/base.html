@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+{# 所有无头尾的模板都应该继承这个布局模板 #}
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<title>{{title}}</title>
+{# 继承页可替换样式 #}
+{% block css %}
+{% endblock %}
+
+{% block _js %}
+{% endblock%}
+</head>
+<body id="{{id}}">
+{# 继承页可替换头部 #}
+{% block header %}
+{% endblock %}
+
+{% block content %}
+{# 继承页内容块 #}
+{% endblock %}
+
+{# 继承页可替换页脚 #}
+{% block footer %}
+{% endblock %}
+
+{# 继承页可替换js #}
+{% block js %}
+{% endblock %}
+</body>
+</html>

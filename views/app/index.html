@@ -1,0 +1,27 @@
+{% extends "./layout/base.html" %}
+
+{{super}}
+
+{% block css %}
+{{ style('/css/base.css', '/css/header.css', '/css/index.css') | safe }}
+{% endblock %}
+
+{% block header %}
+{% include "./include/header.html" %}
+{% endblock %}
+
+{% block content %}
+<div class='app_content'>
+  <div class='content'>{{content}}</div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "./include/footer.html" %}
+{% endblock %}
+
+{% block js %}
+{{ super() }}
+{{ script('/js/header.js') | safe }}
+{% endblock %}
+
