@@ -1,7 +1,7 @@
 {
-  "name": "css-center-example",
+  "name": "koa2-server",
   "version": "1.0.0",
-  "description": "a example to center div or other tags with css.",
+  "description": "a example to learn koa2.",
   "main": "index.js",
   "scripts": {
     "test": "npm run eslint",
@@ -13,10 +13,11 @@
     "url": "git+https://github.com/jianfenkezhan/css-center-example.git"
   },
   "keywords": [
-    "css",
-    "center",
+    "koa2",
+    "nodejs",
     "layout",
-    "example"
+    "example",
+    "unujucks"
   ],
   "author": "goooooog",
   "license": "MIT",
@@ -33,6 +34,7 @@
     "koa-static": "^3.0.0",
     "koa-static-cache": "^5.1.1",
     "koa-views": "^6.1.2",
+    "marked": "^0.3.6",
     "moment": "^2.19.2",
     "nunjucks": "^3.0.1"
   },
