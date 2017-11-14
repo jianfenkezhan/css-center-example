@@ -6,7 +6,7 @@
 $ npm install
 ```
 
-## Launch app
+## Launch Application
 
 ```
 $ npm start
