@@ -12,7 +12,7 @@ const path = require('path');
 
 const p = require('./package.json');
 const config = require('./config')
-const app = module.exports = new Koa();
+const app = global.app = module.exports = new Koa();
 
 // view setting
 const viewPath = path.join(__dirname, config.viewPath);
@@ -26,6 +26,13 @@ engineEnv.addFilter('time', function(input, format) {
     return "";
   }
   return moment(input).format(format || "YYYY-MM-DD HH:mm:ss");
+});
+
+engineEnv.addFilter('env', function(input, singnal) {
+  if (!input) {
+    return config[singnal];
+  }
+  return input;
 });
 
 engineEnv.addGlobal('rootPath', config.rootPath);

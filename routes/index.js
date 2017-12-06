@@ -7,6 +7,6 @@ const demo = require('./demo');
 
 module.exports = function(app) {
   demo(router);
-
+  
   return app.use(router.routes())
 }

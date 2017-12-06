@@ -6,6 +6,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="keywords" content=""/>
+<meta name="x-server-env" content="{{ "" | env('env')}}"/>
+<meta name="x-server-id" content="{{ "" | env('serverid')}}"/>
+<meta name="x-app-author" content="{{ "" | env('author')}}"/>
 <meta name="description" content=""/>
 <title>{{title}}</title>
 {# 继承页可替换样式 #}
@@ -14,6 +17,7 @@
 
 {% block _js %}
 {% endblock%}
+
 </head>
 <body id="{{id}}">
 {# 继承页可替换头部 #}
