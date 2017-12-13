@@ -2,9 +2,9 @@
 
 module.exports = function(app) {
 
-  app.get('/koa2', async (ctx, next) => {
+  app.get('/', async (ctx, next) => {
     await ctx.render('./app/index.html', {
-      title: 'css-center-example',
+      title: 'css-tricks',
       content: "Hello Koa 2",
     })
   })

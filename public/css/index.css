@@ -1,14 +1,29 @@
 .app_content{
-  display: block;
-  font-size: 13px;
-  margin-top: 1px;
-  line-height:140%;
-  min-height: 730px;
-  background: #f8f5f5;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 .content {
-  width: 80%;
+  width: 100%;
+  min-height: -moz-calc(100vh - 60px);
+  min-height: -webkit-calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   margin: 0 auto;
   padding-top: 100px;
+  background: #e77979;
   text-align: center;
+}
+.button {
+  padding: 6px 16px;
+  border: 1px solid #446d88;
+  background: rgb(105, 170, 85) linear-gradient(#e0a250, #58a); border-radius: 4px;
+  box-shadow: 0 1px 5px gray;
+  color: white;
+  text-shadow: 0 -1px 1px #335166;
+  font-size: 20px;
+  line-height: 30px;
 }
